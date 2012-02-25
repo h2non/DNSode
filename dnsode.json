@@ -1,0 +1,38 @@
+{
+	"server" : {
+		"listenv4" : "0.0.0.0",
+		"listenv6" : "::1",
+		"port" : 53,
+		"tcp" : true
+	},
+	"general" : {
+		"recursive" : true,
+		"transfers" : false,
+		"rps" : 10,
+		"cache" : 2, 
+		"update_interval" : 4600
+	},
+	"records" : {
+		"ttl" : 3600,
+		"svr" : true
+	}, 
+	"logging" : {
+		"level" : 1,
+		"recursive" : true
+	},
+	"views" : {
+		"local" : {
+			"network" : "172.20.0.0/25"
+		},
+		"guifinet" : {
+			"network" : "10.0.0.0/8"
+		} 
+	},
+	"zones" : {
+		"fiwall.net" : {
+			"view" : "local",
+			"type" : "master",
+			"file" : "/opt/opew/projects/dnsode/app/fiwall.net.js"
+		}
+	}
+}
