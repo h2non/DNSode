@@ -3,7 +3,7 @@
 		"listenv4" : "0.0.0.0",
 		"listenv6" : "::1",
 		"port" : 53,
-		"tcp" : true
+		"tcp" : false
 	},
 	"general" : {
 		"recursive" : true,
